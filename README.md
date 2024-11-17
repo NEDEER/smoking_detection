@@ -32,14 +32,16 @@ This project detects smoking behavior by analyzing the proximity of the **hand**
 ### Step 1: Clone the repository
 ```bash
 git clone https://github.com/your-username/smoking_detection.git
-<h4>### Step 2: Install dependencies</h4>
+---
+### Step 2: Install dependencies
 
 pip install opencv-python cvzone mediapipe
+---
 ### Step 3: Run the script
 python smoking_detection.py
 
+---
 
-
-📧 Contact
+## 📧 Contact
 For questions or support, feel free to contact:
 📧 Mejri Neder - bougossanader1s3@gmail.com
