@@ -1,144 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smoking Detection Project</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background-color: #0066cc;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .screenshot {
-      width: 100%;
-      max-width: 100%;
-      margin: 10px 0;
-      border: 2px solid #ddd;
-    }
-    .highlight {
-      color: #0066cc;
-      font-weight: bold;
-    }
-    .contact {
-      margin-top: 30px;
-      padding: 20px;
-      background: #333;
-      color: #fff;
-      text-align: center;
-    }
-    .contact a {
-      color: #f4f4f9;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #ddd;
-      color: #333;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px 0;
-      padding: 10px 15px;
-      background-color: #0066cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .btn:hover {
-      background-color: #0052a3;
-    }
-    code {
-      background: #eee;
-      padding: 5px;
-      border-radius: 3px;
-      font-size: 0.9em;
-    }
-  </style>
-</head>
-<body>
+🚭 Smoking Detection Using Face and Hand Tracking
 
-<header>
-  <h1>🚭 Smoking Detection Project</h1>
-  <p>Developed by <span class="highlight">Mejri Neder</span></p>
-</header>
+(Add an actual screenshot from your project instead of this placeholder)
 
-<section>
-  <div class="container">
-    <h2>📋 Overview</h2>
-    <p>This project uses <strong>Computer Vision</strong> to detect smoking behavior by analyzing the proximity of the hand to the face in real-time. It leverages <code>OpenCV</code>, <code>CVZone</code>, and <code>Mediapipe</code> for accurate hand and face detection.</p>
+📋 Overview
+This project uses Computer Vision to detect whether a person is smoking or not based on their hand proximity to their face. It employs Face Mesh Detection, Hand Tracking, and a custom logic to calculate the distance between specific facial landmarks and hand landmarks.
 
-    <h2>🛠 Key Features</h2>
-    <ul>
-      <li>Real-time hand and face detection.</li>
-      <li>Displays messages: <span class="highlight">Smoking</span> or <span class="highlight">No Smoking</span>.</li>
-      <li>Simple, user-friendly visual output.</li>
-    </ul>
+🛠 Key Features
+Real-time hand and face detection using CVZone and OpenCV.
+Displays a simple message ("Smoking" or "No Smoking") based on detected behavior.
+Clean, simple text overlay for the detection message.
+Works with any video file or webcam input.
+🖼 Demo Preview
+Smoking Detected
 
-    <h2>🖼 Demo</h2>
-    <h3>Smoking Detected:</h3>
-    <img src="https://via.placeholder.com/500x300?text=Smoking+Detected" alt="Smoking Detected" class="screenshot">
-    <h3>No Smoking Detected:</h3>
-    <img src="https://via.placeholder.com/500x300?text=No+Smoking+Detected" alt="No Smoking Detected" class="screenshot">
+The system shows "Smoking" when the right hand is close to the face.
 
-    <h2>🚀 Installation and Setup</h2>
-    <ol>
-      <li>Clone the repository:
-        <pre><code>git clone https://github.com/your-username/smoking_detection.git</code></pre>
-      </li>
-      <li>Install dependencies:
-        <pre><code>pip install opencv-python cvzone mediapipe</code></pre>
-      </li>
-      <li>Run the project:
-        <pre><code>python smoking_detection.py</code></pre>
-      </li>
-    </ol>
+No Smoking Detected
 
-    <h2>📂 Project Structure</h2>
-    <pre>
-    .
-    ├── README.md           # Project Documentation
-    ├── smoking_detection.py  # Main Script
-    ├── smooo.mp4           # Sample Video
-    └── images/             # Demo Images
-    </pre>
+The system shows "No Smoking" otherwise.
 
-    <h2>📧 Contact</h2>
-    <p>For questions or support, feel free to contact me at: 
-      <a href="mailto:bougossanader1s3@gmail.com">bougossanader1s3@gmail.com</a>
-    </p>
+⚙️ Technologies Used
+Python 3.9+
+OpenCV - For video frame processing.
+CVZone - For face mesh, face detection, and hand tracking.
+FaceMeshModule - Detects facial landmarks.
+HandTrackingModule - Tracks hand landmarks.
+FaceDetectionModule - Finds face bounding boxes.
+🚀 Installation and Setup
+Step 1: Clone the Repository
+bash
+Copy code
+git clone https://github.com/your-username/smoking-detection.git
+cd smoking-detection
+Step 2: Install Dependencies
+Install the required Python libraries:
 
-    <h2>⭐ Contribute</h2>
-    <p>Want to contribute? Fork the project, make changes, and submit a pull request!</p>
+bash
+Copy code
+pip install opencv-python cvzone mediapipe
+Step 3: Run the Project
+Run the script using the following command:
 
-    <a href="https://github.com/your-username/smoking_detection" class="btn">View Repository on GitHub</a>
-  </div>
-</section>
+bash
+Copy code
+python smoking_detection.py
+📝 Usage
+Replace smooo.mp4 in the script with your video file path or use your webcam.
+The program displays a message "Smoking" or "No Smoking" based on the calculated distance.
+Quit the application by pressing the q key.
+📂 Project Structure
+bash
+Copy code
+.
+├── README.md           # Project Documentation
+├── smoking_detection.py  # Main Script
+├── smooo.mp4           # Sample Video (Replace with your own)
+└── images/             # Folder for demo images (Optional)
+🎨 Customization
+Text Position: Adjust the position of the "Smoking"/"No Smoking" message in the code using cv2.putText().
+Threshold Distance: Modify the distance threshold (currently 30) in the logic to fine-tune detection sensitivity.
+Video Source: Replace the video file path with a webcam feed or a different video.
+🛠 Future Improvements
+Add audio alerts (e.g., warning sound for smoking).
+Extend detection for multiple faces in the frame.
+Support for edge cases like occluded hands or partial face visibility.
+🤝 Contributions
+Contributions are welcome!
+If you'd like to improve the project, fork the repository and submit a pull request.
 
-<footer>
-  <p>&copy; 2024 Mejri Neder | Smoking Detection Project</p>
-</footer>
+📧 Contact
+For any queries or support, feel free to reach out:
+📩 your-email@example.com
 
-</body>
-</html>
+📜 License
+This project is licensed under the MIT License.
+See the LICENSE file for details.
