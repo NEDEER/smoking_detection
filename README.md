@@ -1,144 +1,34 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smoking Detection Project</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
-    }
-    header {
-      background-color: #0066cc;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-    }
-    section {
-      padding: 20px;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    .screenshot {
-      width: 100%;
-      max-width: 100%;
-      margin: 10px 0;
-      border: 2px solid #ddd;
-    }
-    .highlight {
-      color: #0066cc;
-      font-weight: bold;
-    }
-    .contact {
-      margin-top: 30px;
-      padding: 20px;
-      background: #333;
-      color: #fff;
-      text-align: center;
-    }
-    .contact a {
-      color: #f4f4f9;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    footer {
-      text-align: center;
-      padding: 10px;
-      background-color: #ddd;
-      color: #333;
-    }
-    .btn {
-      display: inline-block;
-      margin: 10px 0;
-      padding: 10px 15px;
-      background-color: #0066cc;
-      color: white;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-    .btn:hover {
-      background-color: #0052a3;
-    }
-    code {
-      background: #eee;
-      padding: 5px;
-      border-radius: 3px;
-      font-size: 0.9em;
-    }
-  </style>
-</head>
-<body>
+# 🚭 Smoking Detection Project
 
-<header>
-  <h1>🚭 Smoking Detection Project</h1>
-  <p>Developed by <span class="highlight">Mejri Neder</span></p>
-</header>
+![Python](https://img.shields.io/badge/Python-3.8%2B-blue) ![OpenCV](https://img.shields.io/badge/OpenCV-Library-orange) ![License](https://img.shields.io/badge/License-MIT-green)
 
-<section>
-  <div class="container">
-    <h2>📋 Overview</h2>
-    <p>This project uses <strong>Computer Vision</strong> to detect smoking behavior by analyzing the proximity of the hand to the face in real-time. It leverages <code>OpenCV</code>, <code>CVZone</code>, and <code>Mediapipe</code> for accurate hand and face detection.</p>
+> **Developed by: [Mejri Neder](mailto:bougossanader1s3@gmail.com)**  
+> Detect smoking behavior in real-time using computer vision and Python.
 
-    <h2>🛠 Key Features</h2>
-    <ul>
-      <li>Real-time hand and face detection.</li>
-      <li>Displays messages: <span class="highlight">Smoking</span> or <span class="highlight">No Smoking</span>.</li>
-      <li>Simple, user-friendly visual output.</li>
-    </ul>
+---
 
-    <h2>🖼 Demo</h2>
-    <h3>Smoking Detected:</h3>
-    <img src="smoking.png" alt="Smoking Detected" class="screenshot">
-    <h3>No Smoking Detected:</h3>
-    <img src="noSmoking.png" alt="No Smoking Detected" class="screenshot">
+## 📋 Overview
+This project detects smoking behavior by analyzing the proximity of the **hand** to the **face** in real-time. The system uses **OpenCV**, **CVZone**, and **Mediapipe** for hand and face detection.
 
-    <h2>🚀 Installation and Setup</h2>
-    <ol>
-      <li>Clone the repository:
-        <pre><code>git clone https://github.com/your-username/smoking_detection.git</code></pre>
-      </li>
-      <li>Install dependencies:
-        <pre><code>pip install opencv-python cvzone mediapipe</code></pre>
-      </li>
-      <li>Run the project:
-        <pre><code>python smoking_detection.py</code></pre>
-      </li>
-    </ol>
+### Features:
+- Real-time **face** and **hand detection**.
+- Displays simple messages: **Smoking** or **No Smoking**.
+- Lightweight and easy-to-use Python script.
 
-    <h2>📂 Project Structure</h2>
-    <pre>
-    .
-    ├── README.md           # Project Documentation
-    ├── smoking_detection.py  # Main Script
-    ├── smooo.mp4 or your camera          # Sample Video
-    └── images/             # Demo Images
-    </pre>
+---
 
-    <h2>📧 Contact</h2>
-    <p>For questions or support, feel free to contact me at: 
-      <a href="mailto:bougossanader1s3@gmail.com">bougossanader1s3@gmail.com</a>
-    </p>
+## 🖼 Demo
 
-    <h2>⭐ Contribute</h2>
-    <p>Want to contribute? Fork the project, make changes, and submit a pull request!</p>
+### Smoking Detected:
+![Smoking Detected](https://via.placeholder.com/500x300?text=Smoking+Detected)
 
-    <a href="https://github.com/your-username/smoking_detection" class="btn">View Repository on GitHub</a>
-  </div>
-</section>
+### No Smoking Detected:
+![No Smoking Detected](https://via.placeholder.com/500x300?text=No+Smoking+Detected)
 
-<footer>
-  <p>&copy; 2024 Mejri Neder | Smoking Detection Project</p>
-</footer>
+---
 
-</body>
-</html>
+## 🚀 Installation and Setup
+
+### Step 1: Clone the repository
+```bash
+git clone https://github.com/your-username/smoking_detection.git
